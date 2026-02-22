@@ -5,8 +5,7 @@ Authors : Esma TALHI, Thomas GLUMINEAU
 Documentation at : https://pyserial.readthedocs.io/en/latest/pyserial.html#
 """
 
-import serial
-import serial.tools.list_ports
+
 
 def auto_detect_port():
     print("Scanning ports.")
@@ -20,37 +19,6 @@ def auto_detect_port():
     print(type(ser))
     return ser
 
-""" ports = serial.tools.list_ports.comports()
-    for p in ports:
-        print(p)
-        # initialisation du port Arduino (ici ttyACM0) avec les parametres(9600, 8, 1, 0)
-        # Vous devez utiliser le port qui figure dans : Outils / Ports / Port Série
-        if p.device.endswith("ttyACM0"):
-            print(f" Device found : {p.device}")
-            # try/except permet de tester une instruction qui peut provoquer une erreur.
-            # Si l'erreur arrive, on passe dans "except" au lieu d'arrêter tout le programme.
-            try:
-                ser = serial.Serial(
-                    port=p.device,
-                    baudrate=9600,
-                    bytesize=serial.EIGHTBITS,
-                    parity=serial.PARITY_NONE,
-                    stopbits=serial.STOPBITS_ONE,
-                    timeout=1
-                )
-            except Exception as e:
-                print(f"Port {p.device} is not available: {e}")
-                continue
-
-            # Ouverture seulement si le nom correspond à "ttyACM0"
-
-            print(f"Port {p.device} is opened and connected.")
-            print(ser)
-            return ser
-            break
-
-    #Sert à signaler qu'aucun port valide n'a été trouvé
-    raise Exception("No valid port found.")"""
 
 
 #Envoi d'une trame depuis Python vers Arduino en utilisant le port serie : ser
@@ -66,14 +34,6 @@ def send_trame(ser, trame: str):
 def reception_trame(ser):
     trame = ""
     print("Waiting for trame")
-    """while True:
-        byte = ser.read(1)
-        char = byte.decode(errors="ignore")
-        print(char, end="")
-        trame += char
-        if byte == b'\n':    # fin de trame
-            break"""
-
     while True:
         byte = ser.read(1)   # lire un octet
         #Si aucun ocetet n'est retourne, alors byte = b'' (chaine vide) consideree comme False en python
