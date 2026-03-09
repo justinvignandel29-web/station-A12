@@ -1,19 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42418c93-0b27-4652-a522-67d0d7dbf4b8" name="Changes" comment="init">
-      <change afterPath="$PROJECT_DIR$/App/Interface.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Raspberry/Historique.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Raspberry/verif_capteur.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/CodeStation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/CodeStation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="42418c93-0b27-4652-a522-67d0d7dbf4b8" name="Changes" comment="ajout des codes initiaux">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/FunFact.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/FunFact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/horoscope.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/horoscope.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App/ref.py" beforeDir="false" afterPath="$PROJECT_DIR$/App/ref.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Raspberry/Caméra.py" beforeDir="false" afterPath="$PROJECT_DIR$/Raspberry/Caméra.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Raspberry/Capteur.py" beforeDir="false" afterPath="$PROJECT_DIR$/Raspberry/Capteur.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,12 +25,12 @@
     &quot;assignee&quot;: &quot;justinvignandel29-web&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/justinvignandel29-web/station-A12.git&quot;,
-    &quot;accountId&quot;: &quot;2dfb775e-82c0-4ca8-99a9-86eb9d66af59&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/justinvignandel29-web/station-A12.git",
+    "accountId": "5bd4ccdd-abbc-4a09-8909-b056eaf358c8"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -84,7 +73,8 @@
       <updated>1771272199091</updated>
       <workItem from="1771272200151" duration="3057000" />
       <workItem from="1771782879414" duration="1218000" />
-      <workItem from="1772783211095" duration="1250000" />
+      <workItem from="1772783211095" duration="1814000" />
+      <workItem from="1773065095563" duration="661000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -94,7 +84,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771784023820</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ajout des codes initiaux">
+      <option name="closed" value="true" />
+      <created>1772784720766</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1772784720766</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +112,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="ajout des codes initiaux" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout des codes initiaux" />
   </component>
 </project>
