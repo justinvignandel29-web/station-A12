@@ -16,4 +16,3 @@ class Interface_application(QtWidget):
         self.Pression = QPushButton("Pression")
         self.soleil = QPushButton("Soleil")
         self.Vent = QPushButton("Vent")
-
