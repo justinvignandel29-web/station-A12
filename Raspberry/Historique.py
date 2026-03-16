@@ -78,22 +78,30 @@ class Historique:
 
         return self.donnees
 # Célia-Navaud-Main-Historique
-    from Historique import Historique
+import time
+from Historique import Historique
+
+
 def main():
-        # Création de l'objet Historique
     historique = Historique()
+    # On définit l'intervalle en secondes (30 minutes)
+    INTERVALLE = 30 * 60
 
-        # Exemple de trame reçue
-    trame = "$ARDLM,21,60,500,15*"
+    print("Démarrage du relevé météo (toutes les 30 minutes)...")
 
-        # Traitement de la trame
-    valeurs = historique.traiter_trame(trame)
+    while True:
+        # 1. Simulation de la réception d'une trame (à remplacer par votre lecture réelle)
+        trame = "$ARDLM,21,60,500,15*"
 
-        # Enregistrement dans le fichier
-    historique.enregistrer_trame(valeurs)
+        # 2. Traitement et enregistrement
+        valeurs = historique.traiter_trame(trame)
+        if valeurs:
+            historique.enregistrer_trame(valeurs)
+            print(f"Données enregistrées à {time.strftime('%H:%M:%S')} : {valeurs}")
 
-        # Affichage de l'historique
-    print("Historique :", historique.get_donnees())
+        # 3. Pause du programme pendant 30 minutes
+        print(f"Prochain relevé dans 30 minutes...")
+        time.sleep(INTERVALLE)
 
 
 if __name__ == "__main__":
